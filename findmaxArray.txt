@@ -1,0 +1,32 @@
+// jalase6_cpp.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include "string"
+
+#include "iostream";
+using namespace std;
+
+int main()
+{
+	int numbers[10]; // ghaleb or template amade shod araye 10 taei
+	// por kardan araye
+	for (int i = 0; i < 10; i++)
+	{
+		cout << "please enter numbers: \n";
+		cin >> numbers[i];
+	}
+	int max = numbers[0];
+	for (int k = 1; k < 10; k++)
+	{
+		if (numbers[k] > max)
+			max = numbers[k];
+
+	}
+	cout << "MAx is " << max;
+	cin.get();
+	cin.get();
+    return 0;
+}
+

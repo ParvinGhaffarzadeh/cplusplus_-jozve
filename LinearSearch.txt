@@ -1,0 +1,36 @@
+// jalase6_cpp.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include "string"
+
+#include "iostream"
+#define n 6
+using namespace std;
+
+int main()
+{
+	int nums[n], searchNum;
+	for (int i = 0; i < n; i++)
+	{
+		cin >> nums[i];
+		cout << endl;
+	}
+	cout << "please enter ur searching num\n";
+	cin >> searchNum;
+	for (int k = 0; k < n; k++)
+	{
+		if (nums[k] == searchNum)
+		{
+			cout << "Number find with " << k << "  index\n";
+			exit(0);
+		}
+	}
+
+
+	cin.get();
+	cin.get();
+    return 0;
+}
+

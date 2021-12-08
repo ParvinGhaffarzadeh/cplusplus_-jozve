@@ -1,0 +1,46 @@
+// CPP_11.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include "string"
+#include "math.h"
+#include "iostream";
+using namespace std;
+
+void Display()
+{
+	cout << "Welcome to Circle FunctionR \n";
+}
+void ShowRadius(int r)
+{
+	cout << "YOur Radius is " << r<< endl;
+}
+
+float Masahat(int r)
+{
+	float p = 3.14, s;
+	s = p * r, r;
+	return s;
+
+}
+float Mohit(int r)
+{
+	float p = 3.14, mohitt = 0;
+	mohitt = 2 * p*r;
+	return mohitt;
+
+}
+int main()
+{
+	int rr;
+	Display();
+	cin >> rr;
+	ShowRadius(rr);
+	cout<< "masahat is "<<Masahat(rr)<<endl;
+	cout << "Mohitt is " << Mohit(rr);
+	cin.get();
+	cin.get();
+    return 0;
+}
+

@@ -1,0 +1,36 @@
+// jalase6_cpp.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "conio.h"
+#include "string"
+
+#include "iostream";
+using namespace std;
+
+int main()
+{
+	int num1, num2, result=0; // int op;
+	char ch;
+	cout << "please enter 2 num \n";
+	cin >> num1 >> num2;
+	cout << "please select an operation: + or - or * or /  \n ";
+	cin >> ch;
+	if (ch == '+') // if( op==1)
+		result = num1 + num2;
+		
+	else if (ch == '-') // if (op==2)
+		result = num1 - num2;
+	else if (ch == '*')
+		result = num1 * num2;
+	else if (ch == '/')
+		result = num1 / num2;
+	else
+		cout << "Wrong operation";
+	cout << "Result is " << result;
+
+	cin.get();
+	cin.get();
+    return 0;
+}
+
